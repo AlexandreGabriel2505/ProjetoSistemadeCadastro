@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <limits>
 #include "Funcionario.h"
 #include "Desenvolvedor.h"
 #include "Gerente.h"
@@ -18,10 +19,10 @@ int main() {
 
     while(quantidadeFuncionarios < 6){
         //Dados específicos conforme o tipo
-        int tipo;
         cout << "\nCadastro do Funcionario " 
         << (quantidadeFuncionarios + 1) << endl;
         cout << "Tipo (1 - Desenvolvedor, 2 - Gerente, 3 - Estagiario): ";
+        int tipo;
         cin >> tipo; 
 
         //Instanciando e armazenando no vetor
@@ -90,6 +91,7 @@ int main() {
         }
         funcionarios[quantidadeFuncionarios] = f;
         quantidadeFuncionarios++;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
     //Percorrendo o vetor / Relatório dos funcionários (Polimorfismo)
     cout << fixed << setprecision(2); //Formatação numérica

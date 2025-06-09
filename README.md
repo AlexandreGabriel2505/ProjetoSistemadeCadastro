@@ -16,6 +16,7 @@ Este projeto é um sistema simples em C++ para cadastro de funcionários utiliza
    ```bash
    make
 3. **Execute o programa:**
+   ```bash
    ./cadastro
 
 # ✍️ Autor;

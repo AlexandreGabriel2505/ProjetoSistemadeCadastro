@@ -16,7 +16,7 @@ int main() {
     //Cadastro dos funcionarios
     int quantidadeFuncionarios = 0;
 
-    while(quantidadeFuncionarios < 3){
+    while(quantidadeFuncionarios < 6){
         //Dados específicos conforme o tipo
         int tipo;
         cout << "\nCadastro do Funcionario " 

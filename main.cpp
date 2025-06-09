@@ -24,6 +24,13 @@ int main() {
         cout << "Tipo (1 - Desenvolvedor, 2 - Gerente, 3 - Estagiario): ";
         int tipo;
         cin >> tipo; 
+        // Valida a entrada do usuário para evitar erros
+        if (cin.fail()) {
+            cout << "Erro: Entrada invalida. Por favor, digite um numero." << endl;
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            continue; 
+        }
 
         //Instanciando e armazenando no vetor
         Funcionario* f = nullptr;

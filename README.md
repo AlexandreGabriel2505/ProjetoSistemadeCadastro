@@ -19,6 +19,6 @@ Este projeto é um sistema simples em C++ para cadastro de funcionários utiliza
    ```bash
    ./cadastro
 
-# ✍️ Autor;
+# ✍️ Autor:
 **Alexandre Gabriel - estudante de TI - UFRN**   
 
